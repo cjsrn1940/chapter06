@@ -1,0 +1,19 @@
+package echo.ex05;
+
+public class DigitImpl implements Runnable {
+	
+	@Override
+	public void run() {
+		for(int i=0; i<=9; i++) {
+			System.out.println(i);
+			
+			try {
+				Thread.sleep(1000); //시간차이를 주기 위함
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		
+	}
+
+}
